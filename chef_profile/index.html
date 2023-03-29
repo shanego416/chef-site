@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chef Profile</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="name">John Smith:</h1>
+      <h1 class="titles">Chef</h1>
+      <!--
+        <h2 class="titles">Caterer</h2>
+        <h2 class="titles">Food Stylist</h2>
+        <h2 class="titles">Private Chef</h2>
+      -->
+    </header>
+    <nav class="main-menu">
+      <ul class="main-menu-list">
+        <li class="main-menu-link"><a href="#">About</a></li>
+        <li class="main-menu-link"><a href="#">Photo Gallery</a></li>
+        <li class="main-menu-link"><a href="#">Menu Gallery</a></li>
+        <li class="main-menu-link"><a href="#">Attributes</a></li>
+        <li class="main-menu-link"><a href="#">Socials</a></li>
+        <li class="main-menu-link"><a href="#">Contact</a></li>
+        <li class="main-menu-link"><a href="#">Resume</a></li>
+        <li class="main-menu-link"><a href="#">Booking </a></li>
+      </ul>
+    </nav>
+    <section class="about">
+      <h2 class="about-title">A little about me...</h2>
+      <p class="about-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        reiciendis deserunt, veritatis cupiditate assumenda, minus consequatur
+        odio voluptatum consequuntur repudiandae hic. Itaque hic autem
+        laudantium voluptatem repellendus nisi. Ipsam, provident! Unde nihil
+        fugit qui alias vitae modi tenetur voluptates ut eaque reiciendis, sunt
+        laboriosam deleniti, dicta tempore harum magnam neque?
+      </p>
+    </section>
+    <h2 class="photo-gallery-title">Some recent creations</h2>
+    <section class="photo-gallery">
+      <img src="images/img01.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img02.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img03.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img04.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img05.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img06.jpg" alt="food photo" class="gallery-image" />
+    </section>
+    <nav class="menu-nav">
+      <ul class="menu-nav-list">
+        <li class="menu-nav-link"><a href="#">Menu 1</a></li>
+        <li class="menu-nav-link"><a href="#">Menu 2</a></li>
+        <li class="menu-nav-link"><a href="#">Menu 3</a></li>
+        <li class="menu-nav-link"><a href="#">Menu 4</a></li>
+      </ul>
+    </nav>
+    <section class="attributes">
+      <a href="#">BlogTo</a>
+      <a href="#">Narcity</a>
+    </section>
+    <section class="socials">
+      <a href="#">Linkedin</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </section>
+    <section class="contact">
+      <div class="form-container">
+        <form action="#">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" />
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" />
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject">
+            <option value="">Select a Subject</option>
+            <option value="1">Book for a private event</option>
+            <option value="2">Request a resume</option>
+            <option value="3">Food Styling</option>
+            <option value="4">Just saying hi</option>
+          </select>
+          <label for="contact-message">Message</label>
+          <input type="text" id="contact-message" style="height: 200px" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
