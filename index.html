@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
     <title>Chef Profile</title>
   </head>
   <body>
@@ -49,42 +55,62 @@
       <img src="images/img05.jpg" alt="food photo" class="gallery-image" />
       <img src="images/img06.jpg" alt="food photo" class="gallery-image" />
     </section>
-    <nav class="menu-nav">
-      <ul class="menu-nav-list">
-        <li class="menu-nav-link"><a href="#">Menu 1</a></li>
-        <li class="menu-nav-link"><a href="#">Menu 2</a></li>
-        <li class="menu-nav-link"><a href="#">Menu 3</a></li>
-        <li class="menu-nav-link"><a href="#">Menu 4</a></li>
-      </ul>
-    </nav>
-    <section class="attributes">
-      <a href="#">BlogTo</a>
-      <a href="#">Narcity</a>
+    <section class="menu-section">
+      <nav class="menu-nav">
+        <ul class="menu-nav-list">
+          <li class="menu-nav-link menu-nav-link01"><a href="#">Menu 1</a></li>
+          <li class="menu-nav-link"><a href="#">Menu 2</a></li>
+          <li class="menu-nav-link"><a href="#">Menu 3</a></li>
+          <li class="menu-nav-link"><a href="#">Menu 4</a></li>
+        </ul>
+      </nav>
+      <img
+        src="images/food-menu01.jpg"
+        alt="food menu 1"
+        class="food-menu food-menu01"
+      />
     </section>
-    <section class="socials">
-      <a href="#">Linkedin</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
+    <section class="attributes">
+      <h2 class="attributes-title">Shout-outs and Attributes</h2>
+      <div class="attributes-img-container">
+        <img
+          class="attribute-photo"
+          src="images/blogTO.png"
+          alt="BlogTo photo"
+        />
+        <img class="attribute-photo" src="/images/TorontoLife.png" alt="" />
+      </div>
     </section>
     <section class="contact">
-      <div class="form-container">
+      <h2 class="contact-title">Contact</h2>
+      <div class="contact-container">
         <form action="#">
-          <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" />
-          <label for="contact-email">Email</label>
-          <input type="email" id="contact-email" />
-          <label for="contact-subject">Subject</label>
-          <select id="contact-subject">
+          <label for="contact-name" class="contact-label">Name</label>
+          <input type="text" id="contact-name" class="contact-input" />
+          <label for="contact-email" class="contact-label">Email</label>
+          <input type="email" id="contact-email" class="contact-input" />
+          <label for="contact-subject" class="contact-label">Subject</label>
+          <select id="contact-subject" class="contact-input">
             <option value="">Select a Subject</option>
             <option value="1">Book for a private event</option>
             <option value="2">Request a resume</option>
             <option value="3">Food Styling</option>
             <option value="4">Just saying hi</option>
           </select>
-          <label for="contact-message">Message</label>
-          <input type="text" id="contact-message" style="height: 200px" />
+          <label for="contact-message" class="contact-label">Message</label>
+          <input
+            type="text"
+            id="contact-message"
+            class="contact-input"
+            style="height: 200px"
+          />
         </form>
       </div>
+    </section>
+    <section class="socials">
+      <a href="#">Linkedin</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
     </section>
   </body>
 </html>
