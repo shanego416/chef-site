@@ -41,6 +41,10 @@ body {
   color: whitesmoke;
 }
 
+#hamburger-menu-icon {
+  display: none;
+}
+
 section {
   padding: 32px;
 }
@@ -70,8 +74,13 @@ section {
 }
 
 /* This is a repeat of main nav -------------------------*/
+.menu-section {
+  padding: 0px;
+}
 
 .menu-nav {
+  margin-top: 30px;
+  width: 100%;
   display: flex;
   background-color: black;
 }
@@ -102,7 +111,7 @@ section {
 }
 
 .attributes-title {
-  padding-bottom: 32px;
+  padding: 32px 0 32px 0;
   text-decoration: underline;
 }
 
@@ -160,7 +169,33 @@ section {
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-}
 @media screen and (max-width: 800px) {
+  .main-menu-list {
+    display: none;
+  }
+  .main-menu-list--active {
+    display: block;
+  }
+  #hamburger-menu-icon {
+    display: block;
+    margin-left: auto;
+    width: 32px;
+  }
+  .main-menu-link {
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  .photo-gallery {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .gallery-image {
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+  }
+  .photo-gallery-title {
+    padding-bottom: 32px;
+  }
 }

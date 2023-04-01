@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="main.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,9 +23,16 @@
         <h2 class="titles">Food Stylist</h2>
         <h2 class="titles">Private Chef</h2>
       -->
+      <img
+        id="hamburger-menu-icon"
+        class="hamburger-menu-icon"
+        src="/images/hamburger-menu-icon.svg"
+        alt="menu icon"
+        onclick="myFunction()"
+      />
     </header>
     <nav class="main-menu">
-      <ul class="main-menu-list">
+      <ul class="main-menu-list" id="main-menu-list">
         <li class="main-menu-link"><a href="#">About</a></li>
         <li class="main-menu-link"><a href="#">Photo Gallery</a></li>
         <li class="main-menu-link"><a href="#">Menu Gallery</a></li>
@@ -48,9 +56,9 @@
     </section>
     <h2 class="photo-gallery-title">Some recent creations</h2>
     <section class="photo-gallery">
-      <img src="images/img01.jpg" alt="food photo" class="gallery-image" />
-      <img src="images/img02.jpg" alt="food photo" class="gallery-image" />
       <img src="images/img03.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img02.jpg" alt="food photo" class="gallery-image" />
+      <img src="images/img01.jpg" alt="food photo" class="gallery-image" />
       <img src="images/img04.jpg" alt="food photo" class="gallery-image" />
       <img src="images/img05.jpg" alt="food photo" class="gallery-image" />
       <img src="images/img06.jpg" alt="food photo" class="gallery-image" />
@@ -58,10 +66,12 @@
     <section class="menu-section">
       <nav class="menu-nav">
         <ul class="menu-nav-list">
-          <li class="menu-nav-link menu-nav-link01"><a href="#">Menu 1</a></li>
-          <li class="menu-nav-link"><a href="#">Menu 2</a></li>
-          <li class="menu-nav-link"><a href="#">Menu 3</a></li>
-          <li class="menu-nav-link"><a href="#">Menu 4</a></li>
+          <li class="menu-nav-link menu-nav-link01">
+            <a href="#">Breakfast/Brunch</a>
+          </li>
+          <li class="menu-nav-link"><a href="#">Lunch</a></li>
+          <li class="menu-nav-link"><a href="#">Dinner</a></li>
+          <li class="menu-nav-link"><a href="#">Desert</a></li>
         </ul>
       </nav>
       <img
