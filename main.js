@@ -1,9 +1,11 @@
-function myFunction() {
+function mobileNav() {
   document
     .getElementById("main-menu-list")
     .classList.toggle("main-menu-list--active");
 }
 
-$("hamburger-menu-icon").click(function () {
-  $("hamburger-menu-icon").css("transform", "scale(1,-1) ");
-});
+function iconSpin() {
+  document
+    .getElementById("hamburger-menu-icon")
+    .classList.toggle("rotate-center");
+}
