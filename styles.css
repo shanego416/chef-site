@@ -11,6 +11,8 @@ body {
 }
 
 .header {
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 32px;
   display: flex;
   align-items: center;
@@ -49,13 +51,35 @@ section {
   padding: 32px;
 }
 
+.about {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
 .about-title {
+  margin: auto;
+  width: 66%;
+  color: whitesmoke;
+  padding-bottom: 16px;
   text-decoration: underline;
-  padding-bottom: 32px;
+}
+
+.about-paragraph {
+  font-size: 22px;
+  margin: auto;
+  color: whitesmoke;
+  width: 66%;
+}
+
+.profile-photo {
+  width: 33%;
 }
 
 .photo-gallery-title {
-  padding-left: 32px;
+  padding: 32px 0 16px 16px;
   text-decoration: underline;
 }
 
@@ -76,6 +100,7 @@ section {
 /* This is a repeat of main nav -------------------------*/
 .menu-section {
   padding: 0px;
+  background-color: black;
 }
 
 .menu-nav {
@@ -91,7 +116,7 @@ section {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 32px 0 32px;
 }
 
 .menu-nav-link > a {
@@ -164,7 +189,7 @@ section {
   padding: 32px;
 }
 
-.socials > a {
+.socials > h2 > a {
   color: whitesmoke;
   text-decoration: none;
 }
@@ -198,6 +223,22 @@ section {
   .photo-gallery-title {
     padding-bottom: 32px;
   }
+  .about {
+    display: block;
+    text-align: justify;
+  }
+
+  .about-paragraph {
+    width: 100%;
+  }
+
+  .profile-photo {
+    width: 100%;
+    padding-top: 8px;
+  }
+  .about-title {
+    margin: 0 0 0 0;
+  }
 }
 
 .rotate-center {
@@ -222,5 +263,51 @@ section {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+.slide-in-blurred-top {
+  -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
   }
 }
